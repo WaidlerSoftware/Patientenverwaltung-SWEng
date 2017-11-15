@@ -9,3 +9,6 @@ git checkout Florian            //zurückwechseln in eigenen Branch
 git branch		                // zeigt alle Branchens auf dem lokales Repository an
 git checkout –b Florian		    // Verlassen des aktuellen Branches und anlegen eines neuen lokalen Branches
 git push -u origin Florian		// verbinden des lokalen mit dem remote Branch
+
+3) push to remote
+git push origin Florian
