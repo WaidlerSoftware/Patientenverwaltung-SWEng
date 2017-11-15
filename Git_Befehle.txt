@@ -1,0 +1,6 @@
+1) Merge my Branch with Master
+git checkout master             //wechsle zu Master Branch
+git pull origin master          //Daten von Remote Master ziehen 
+git merge Florian               //lokalen Master mit Florian mergen
+git push origin master          //Daten des lokalen Master an remote bereitstellen
+git checkout Florian            //zurückwechseln in eigenen Branch
