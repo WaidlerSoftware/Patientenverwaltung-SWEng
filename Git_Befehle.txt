@@ -12,3 +12,9 @@ git push -u origin Florian		// verbinden des lokalen mit dem remote Branch
 
 3) push to remote
 git push origin Florian
+
+4) Meinen Branch mit master mergen (alles vom master in meinen Branch mergen)
+git checkout master             // zu lokalen master Branch wechseln
+git pull origin master          // lokalen master Branch updaten
+git checkout Florian            // in eigenen Branch wechseln
+git merge master                // Florian Branch mit master mergen
