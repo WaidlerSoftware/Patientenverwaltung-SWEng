@@ -4,3 +4,8 @@ git pull origin master          //Daten von Remote Master ziehen
 git merge Florian               //lokalen Master mit Florian mergen
 git push origin master          //Daten des lokalen Master an remote bereitstellen
 git checkout Florian            //zurückwechseln in eigenen Branch
+
+2) Branch erstellen
+git branch		                // zeigt alle Branchens auf dem lokales Repository an
+git checkout –b Florian		    // Verlassen des aktuellen Branches und anlegen eines neuen lokalen Branches
+git push -u origin Florian		// verbinden des lokalen mit dem remote Branch
