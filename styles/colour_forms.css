@@ -58,6 +58,10 @@ body{
     padding-top: 48px;
 }
 
+a:link {
+    text-decoration:none;
+}
+
 /*.button-l{
     position: absolute;
     left: 300px;
