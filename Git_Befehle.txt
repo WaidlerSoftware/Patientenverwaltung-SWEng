@@ -1,0 +1,20 @@
+1) Merge my Branch with Master
+git checkout master             //wechsle zu Master Branch
+git pull origin master          //Daten von Remote Master ziehen 
+git merge Florian               //lokalen Master mit Florian mergen
+git push origin master          //Daten des lokalen Master an remote bereitstellen
+git checkout Florian            //zurückwechseln in eigenen Branch
+
+2) Branch erstellen
+git branch		                // zeigt alle Branchens auf dem lokales Repository an
+git checkout –b Florian		    // Verlassen des aktuellen Branches und anlegen eines neuen lokalen Branches
+git push -u origin Florian		// verbinden des lokalen mit dem remote Branch
+
+3) push to remote
+git push origin Florian
+
+4) Meinen Branch mit master mergen (alles vom master in meinen Branch mergen)
+git checkout master             // zu lokalen master Branch wechseln
+git pull origin master          // lokalen master Branch updaten
+git checkout Florian            // in eigenen Branch wechseln
+git merge master                // Florian Branch mit master mergen
