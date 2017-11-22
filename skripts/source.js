@@ -1,1 +1,6 @@
-// reisinger test commit
+// reisinger test Funktion
+
+function myFunction() {
+    var x = document.getElementById("btn1").name;
+    document.getElementById("demo").innerHTML = x;
+}
