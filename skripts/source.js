@@ -10,7 +10,7 @@ function myExampleFunction() {
 // 
 // Patienten anlegen
 
-document.getElementById("berechnen").onclick = berechne_BMI;
+document.getElementById("save-p").onclick = patientenSpeichern();
 
 function patientenSpeichern() {
     // Get values
@@ -21,6 +21,14 @@ function patientenSpeichern() {
     document.getElementById("demo").innerHTML = x;
 
     // Check for empty variables/inputs
-    
+    if ((vorname == "")
+        || (nachname == "")
+        || (geburtsdatum == "tt.mm.jjjj")
+        || (emailadr == "")) {
+
+        var warningFalseInput =
+            "<br>Füllen Sie alle Angaben aus<br>"
+        document.getElementById("demo").innerHTML = warningFalseInput;
+    }
 
 }
