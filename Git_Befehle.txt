@@ -18,3 +18,5 @@ git checkout master             // zu lokalen master Branch wechseln
 git pull origin master          // lokalen master Branch updaten
 git checkout Florian            // in eigenen Branch wechseln
 git merge master                // Florian Branch mit master mergen
+
+$sql = "INSERT INTO `patienten`(`Names`, `Geburtsdatum`, `Krankenversicherungsart`, `Adresse`) VALUES (\'Simon Brummer\',\'29.01.1199\',\'privat\',\'sodijdf\')";
