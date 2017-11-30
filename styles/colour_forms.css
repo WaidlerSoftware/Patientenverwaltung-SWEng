@@ -6,7 +6,11 @@ body{
 .flex-background{
     background-color: green;
     position: relative;
+<<<<<<< HEAD
     min-height: 731px;
+=======
+    min-height: 100%;
+>>>>>>> 67e9b143c0b1f19d62b4f40b3cf569a244acb39b
     width: 100%;
 }
 
@@ -62,6 +66,7 @@ a:link {
     text-decoration:none;
 }
 
+<<<<<<< HEAD
 .home-button{
     position: fixed;
     bottom: 40px;
@@ -70,6 +75,16 @@ a:link {
     color: white;
     font-size: 24px;
     font-weight: bold;
+=======
+.home-button {
+    color: white;
+    background-color: green;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 40px;
+    right: 300px;
+>>>>>>> 67e9b143c0b1f19d62b4f40b3cf569a244acb39b
 
 
 }
