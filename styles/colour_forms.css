@@ -6,11 +6,7 @@ body{
 .flex-background{
     background-color: green;
     position: relative;
-<<<<<<< HEAD
     min-height: 731px;
-=======
-    min-height: 100%;
->>>>>>> 67e9b143c0b1f19d62b4f40b3cf569a244acb39b
     width: 100%;
 }
 
