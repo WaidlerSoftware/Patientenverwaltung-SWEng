@@ -63,7 +63,7 @@ a:link {
 }
 
 .home-button{
-    position: fixed;
+    position: absolute;
     bottom: 40px;
     right: 300px;
     background-color: green;
