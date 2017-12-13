@@ -11,35 +11,19 @@
     </head>
     <body>
         <div class="flex-background">
-            <div class="static-background">
-                <span id="p-an-title">
-                    WaidlerSoftware - Patientenverwaltung
-                </span>
-            </div>
-            <table>
+            <table class="static-background">
                 <tr>
-                    <th>Vorname</th>
-                    <th>Nachname</th>
-                    <th>Geschlecht</th>
-                    <th>Geburtsdatum</th>
-                    <th>Email Adresse</th>
-                    <th>Krankenversicherung</th>
+                    <td class="main-title" style="vertical-align:top">
+                        WaidlerSoftware - Patientenverwaltung   
+                    </td>         
                 </tr>
-                <!-- Dynamisches erstellen der einzelnen 'row's aufgrund der Patienten am Server -->
-                
-                <?php
-                echo "Hier könnten ihre Patienten stehen!";                
-                ?>
-
-            </table>
-            <table>
-                    <tr>
-                        <a href=../main.html>
-                            <button class = "home-button mdl-button mdl-js-button mdl-button--raised">
-                                <i class = "material-icons">home</i> Hauptseite
-                            </button>
-                        </a>
-                    </tr>
+                <tr>
+                    <a href=../main.html>
+                        <button class = "home-button mdl-button mdl-js-button mdl-button--raised">
+                            <i class = "material-icons">home</i> Hauptseite
+                        </button>
+                    </a>
+                </tr>
             </table>
         </div>
     </body>
