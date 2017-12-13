@@ -6,20 +6,18 @@
 // create a variable
 $leistungsnummer=$_POST['leistungsnummer'];
 $leistungsname=$_POST['leistungsname'];
-$geschlecht=$_POST['geschlecht'];
-$geburtsdatum=$_POST['geburtsdatum'];
-$email=$_POST['email'];
-$versicherung=$_POST['versicherung'];
+$zahlungsbetrag_kasse=$_POST['zahlungsbetrag_kasse'];
+$zahlungsbetrag_privat=$_POST['zahlungsbetrag_privat'];
  
 //Execute the query
  
-mysqli_query($connect,"INSERT INTO patient(vorname,nachname,geschlecht,geburtsdatum,email,versicherung)
-				VALUES('$vorname','$nachname','$geschlecht','$geburtsdatum','$email','$versicherung')");
+mysqli_query($connect,"INSERT INTO leistung(leistungsnummer,leistungsname,zahlungsbetrag_kasse,zahlungsbetrag_privat)
+				VALUES('$leistungsnummer','$leistungsname','$zahlungsbetrag_kasse','$zahlungsbetrag_privat')");
 
 if(mysqli_affected_rows($connect) > 0){
-	include("./patient_anlegen.html");	
+	include("./leistung_anlegen.html");	
 } else {
-	include("./patient_anlegen.html");
+	include("./leistung_anlegen.html");
 	echo mysqli_error ($connect);
 }
 

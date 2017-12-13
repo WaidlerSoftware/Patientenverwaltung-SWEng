@@ -21,7 +21,7 @@
                     </tr>
             <tr id="leistung_anlegen" class="main-area">
                 <td>
-                    <form method="post" action="./process_leistung.php" class="pure-form pure-form-aligned">
+                    <form method="post" action="./save_leistung.php" class="pure-form pure-form-aligned">
                         <fieldset>
                             <div class="pure-control-group">
                                 <label for="Nummer_der_Leistung">Leistungsnummer</label>
@@ -35,12 +35,12 @@
                             
                             <div class="pure-control-group">
                                 <label for="Wert_fuer_Kassenpatienten">Wert für Kassenpatienten</label>
-                                <input name="zahlungsbetrag_kasse" type="text" placeholder="Wert in €">
+                                <input name="zahlungsbetrag_kasse" type="number" placeholder="Wert in €">
                             </div>
 
                             <div class="pure-control-group">
                                 <label for="Wert_fuer_Privatpatienten">Wert für Privatpatienten</label>
-                                <input name="zahlungsbetrag_privat" type="text" placeholder="Wert in €">
+                                <input name="zahlungsbetrag_privat" type="number" placeholder="Wert in €">
                             </div>
 
                             <div class="pure-controls">
