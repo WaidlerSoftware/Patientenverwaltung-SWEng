@@ -17,9 +17,9 @@ mysqli_query($connect,"INSERT INTO patient(vorname,nachname,geschlecht,geburtsda
 				VALUES('$vorname','$nachname','$geschlecht','$geburtsdatum','$email','$versicherung')");
 
 if(mysqli_affected_rows($connect) > 0){
-	include("./patient_anlegen.html");	
+	include("./rechnung_anlegen.html");	
 } else {
-	include("./patient_anlegen.html");
+	include("./rechnung_anlegen.html");
 	echo mysqli_error ($connect);
 }
 
