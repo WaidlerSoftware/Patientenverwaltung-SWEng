@@ -21,11 +21,13 @@ body{
 .main-title{
     background-color: white;
     color: green;
+    padding: 40px;
     text-align: center;
     font-family: Arial;
     text-decoration: underline;
     font-size: 48px;
     font-weight: bold;
+    
 }
 
 .main-area{
@@ -39,8 +41,12 @@ body{
 }
 
 .main_area_title{
+    vertical-align: bottom;
     padding: 0px;
+    font-size: 24px;
+    font-style: bold;
     text-decoration: underline;
+
 }
 
 .mdl-button{
@@ -75,15 +81,4 @@ a:link {
     color: white;
     font-size: 24px;
     font-weight: bold;
-
-
 }
-/*.button-l{
-    position: absolute;
-    left: 300px;
-}
-
-.button-r{
-    position: absolute;
-    left: 500px;
-}*/
