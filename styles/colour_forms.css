@@ -38,6 +38,11 @@ body{
     font-weight: bold;
 }
 
+.main_area_title{
+    padding: 0px;
+    text-decoration: underline;
+}
+
 .mdl-button{
     background-color: green;
     color: white;
@@ -60,6 +65,16 @@ body{
 
 a:link {
     text-decoration:none;
+}
+
+.home-button{
+    position: fixed;
+    bottom: 40px;
+    right: 300px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /*.button-l{
