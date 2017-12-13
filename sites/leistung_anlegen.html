@@ -21,30 +21,30 @@
                     </tr>
             <tr id="leistung_anlegen" class="main-area">
                 <td>
-                    <form class="pure-form pure-form-aligned">
+                    <form method="post" action="./process_leistung.php" class="pure-form pure-form-aligned">
                         <fieldset>
                             <div class="pure-control-group">
                                 <label for="Nummer_der_Leistung">Leistungsnummer</label>
-                                <input id="Nummer_der_Leistung" type="number" placeholder="Leistungsnummer">
+                                <input name="leistungsnummer" type="number" placeholder="Leistungsnummer">
                             </div>
 
                             <div class="pure-control-group">
                                 <label for="Name_der_Leistung">Leistungsname</label>
-                                <input id="Name_der_Leistung" type="text" placeholder="Name der Leistung">
+                                <input name="leistungsname" type="text" placeholder="Name der Leistung">
                             </div>
                             
                             <div class="pure-control-group">
                                 <label for="Wert_fuer_Kassenpatienten">Wert für Kassenpatienten</label>
-                                <input id="Wert_Kassenpatienten" type="text" placeholder="Wert in €">
+                                <input name="zahlungsbetrag_kasse" type="text" placeholder="Wert in €">
                             </div>
 
                             <div class="pure-control-group">
                                 <label for="Wert_fuer_Privatpatienten">Wert für Privatpatienten</label>
-                                <input id="Wert_Privatpatienten" type="text" placeholder="Wert in €">
+                                <input name="zahlungsbetrag_privat" type="text" placeholder="Wert in €">
                             </div>
 
                             <div class="pure-controls">
-                                <button type="speichern" class="pure-button pure-button-primary">Speichern</button>
+                                <button type="submit" class="pure-button pure-button-primary">Speichern</button>
                             </div>
                         </fieldset>
                     </form>
