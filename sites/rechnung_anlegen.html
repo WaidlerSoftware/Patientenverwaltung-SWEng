@@ -21,34 +21,34 @@
         </tr>
         <tr id="rechnung_anlegen" class="main-area">
             <td>
-                <form class="pure-form pure-form-aligned">
+                <form method="post" action="./process_rechnung.php" class="pure-form pure-form-aligned">
                     <fieldset>
                         <div class="pure-control-group">
                             <label for="anschrift">Anschrift</label>
-                            <input id="anschrift" type="text" placeholder="Anschrift">
+                            <input name="anschrift" type="text" placeholder="Anschrift">
                         </div>
 
                         <div class="pure-control-group">
                             <label for="absender">Absender</label>
-                            <input id="absender" type="text" placeholder="Absender">
+                            <input name="absender" type="text" placeholder="Absender">
                         </div>
 
                         <div class="pure-control-group">
                                 <label for="erbrachte_Leistung">Erbrachte Leistung</label>
-                                <input id="erbrachte_Leistung" type="text" placeholder="erbrachte Leistung">
+                                <input name="erbrachte_Leistung" type="text" placeholder="erbrachte Leistung">
                         </div>
 
                         <div class="pure-control-group">
                             <label for="gesamtbetrag">Gesamtbetrag</label>
-                            <input id="gesamtbetrag" type="text" placeholder="Gesamtbetrag in €">
+                            <input name="gesamtbetrag" type="text" placeholder="Gesamtbetrag in €">
                         </div>
                         <div class="pure-control-group">
                             <label for="bankverbindung">Bankverbindung</label>
-                            <input id="bankverbindung" type="text" placeholder="Bankverbindung">
+                            <input name="bankverbindung" type="text" placeholder="Bankverbindung">
                         </div>
 
                         <div class="pure-controls">
-                            <button type="speichern" class="pure-button pure-button-primary">Speichern</button>
+                            <button type="submit" class="pure-button pure-button-primary">Speichern</button>
                         </div>
                     </fieldset>
                 </form>
