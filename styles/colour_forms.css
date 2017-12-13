@@ -68,15 +68,16 @@ a:link {
 }
 
 .home-button{
-    position: fixed;
+    position: absolute;
     bottom: 40px;
     right: 300px;
     background-color: green;
     color: white;
     font-size: 24px;
     font-weight: bold;
-}
 
+
+}
 /*.button-l{
     position: absolute;
     left: 300px;
