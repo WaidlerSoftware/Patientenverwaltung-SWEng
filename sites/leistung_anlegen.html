@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Leistung Anlegen</title>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="../wald.png"/>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" 
+            integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="../styles/colour_forms.css">
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="flex-background">
+                <table class="static-background">
+                        <tr>
+                            <td class="main-title" style="vertical-align:top">WaidlerSoftware - Patientenverwaltung</td>
+                        </tr>
+                <tr id="leistung_anlegen" class="main-area">
+                    <td>
+                        <form class="pure-form pure-form-aligned">
+                            <fieldset>
+                                <div class="pure-control-group">
+                                    <label for="Nummer_der_Leistung">Leistungsnummer</label>
+                                    <input id="Nummer_der_Leistung" type="number" placeholder="Leistungsnummer">
+                                </div>
 
-<head>
-    <title>Leistung Anlegen</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="../styles/colour_forms.css">
-    <script src="scripts/main.js"></script>
-</head>
+                                <div class="pure-control-group">
+                                    <label for="Name_der_Leistung">Leistungsname</label>
+                                    <input id="Name_der_Leistung" type="text" placeholder="Name der Leistung">
+                                </div>
+                                
+                                <div class="pure-control-group">
+                                    <label for="Wert_fuer_Kassenpatienten">Wert für Kassenpatienten</label>
+                                    <input id="Wert_Kassenpatienten" type="text" placeholder="Wert in €">
+                                </div>
 
-<body>
-    <div class="flex-background">
-            <table class="static-background">
-                    <tr>
-                        <td class="main-title" style="vertical-align:top">WaidlerSoftware - Patientenverwaltung</td>
-                    </tr>
-            <tr id="leistung_anlegen" class="main-area">
-                <td>
-                    <form method="post" action="./save_leistung.php" class="pure-form pure-form-aligned">
-                        <fieldset>
-                            <div class="pure-control-group">
-                                <label for="Nummer_der_Leistung">Leistungsnummer</label>
-                                <input name="leistungsnummer" type="number" placeholder="Leistungsnummer">
-                            </div>
+                                <div class="pure-control-group">
+                                    <label for="Wert_fuer_Privatpatienten">Wert für Privatpatienten</label>
+                                    <input id="Wert_Privatpatienten" type="text" placeholder="Wert in €">
+                                </div>
 
-                            <div class="pure-control-group">
-                                <label for="Name_der_Leistung">Leistungsname</label>
-                                <input name="leistungsname" type="text" placeholder="Name der Leistung">
-                            </div>
-                            
-                            <div class="pure-control-group">
-                                <label for="Wert_fuer_Kassenpatienten">Wert für Kassenpatienten</label>
-                                <input name="zahlungsbetrag_kasse" type="number" placeholder="Wert in €">
-                            </div>
-
-                            <div class="pure-control-group">
-                                <label for="Wert_fuer_Privatpatienten">Wert für Privatpatienten</label>
-                                <input name="zahlungsbetrag_privat" type="number" placeholder="Wert in €">
-                            </div>
-
-                            <div class="pure-controls">
-                                <button type="submit" class="pure-button pure-button-primary">Speichern</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <a href=../main.html>
-                    <button class="home-button mdl-button mdl-js-button mdl-button--raised">
-                        <i class="material-icons">home</i> Hauptseite
-                    </button>
-                </a>
-            </tr>
-        </table>
-    </div>
-</body>
-
+                                <div class="pure-controls">
+                                    <button type="speichern" class="pure-button pure-button-primary">Speichern</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <a href=../main.html>
+                        <button class="home-button mdl-button mdl-js-button mdl-button--raised">
+                            <i class="material-icons">home</i> Hauptseite
+                        </button>
+                    </a>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>
