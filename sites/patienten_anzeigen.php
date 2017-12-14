@@ -17,6 +17,66 @@
                         WaidlerSoftware - Patientenverwaltung   
                     </td>         
                 </tr>
+
+				<tr>
+					<td>
+<?php 
+    $db = mysqli_connect('localhost','root','','patientenverwaltung');
+        if (mysqli_connect_errno()) { 
+        die ('Konnte keine Verbindung zur Datenbank aufbauen:  
+                '.mysqli_connect_error().'('.mysqli_connect_errno().')'); 
+        } 
+     
+    $sql = 'SELECT * FROM patient ORDER BY vorname'; 
+    $erg = $db->query($sql); 
+        if (!$erg){ 
+        die ('Etwas stimmte mit dem Query nicht: '.$db->error); 
+        } 
+?> 
+
+<table> 
+
+	<tr> 
+		<th>Vorname</th> 
+        <th>Nachname</th> 
+        <th>Geschlecht</th> 
+        <th>Geburtsdatum</th> 
+        <th>E-Mail</th> 
+        <th>Versicherung</th> 
+	</tr> 
+
+	<?php 
+             while ($row = $erg->fetch_assoc()) {       
+         ?> 
+
+	<tr> 
+		<td>
+			<?php echo $row['vorname']; ?>
+		</td> 
+		<td>
+			<?php echo $row['nachname']; ?>
+        </td> 
+        <td>
+			<?php echo $row['geschlecht']; ?>
+        </td>
+		<td>
+			<?php echo $row['geburtsdatum']; ?>
+        </td> 
+        <td>
+			<?php echo $row['e-mail']; ?>
+        </td>
+        <td>
+			<?php echo $row['versicherung']; ?>
+		</td>
+	</tr> 
+
+	<?php 
+                } 
+        ?> 
+</table> 
+</td> 
+                </tr>
+
                 <tr>
                     <a href=../main.html>
                         <button class = "home-button mdl-button mdl-js-button mdl-button--raised">
