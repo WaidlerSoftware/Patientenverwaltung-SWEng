@@ -34,22 +34,31 @@
         } 
 ?> 
 
-<table> 
-
-	<tr> 
-		<th>Vorname</th> 
-        <th>Nachname</th> 
-        <th>Geschlecht</th> 
-        <th>Geburtsdatum</th> 
-        <th>E-Mail</th> 
-        <th>Versicherung</th> 
+<table style="text-align: center; border-collapse: collapse; border: 3px solid black;">
+	<tr style="font-size: 16px; border: 3px solid black; padding: 10px;"> 
+        <td>Vorname</td>
+        <td>
+            Nachname
+        </td>
+        <td>
+            Geschlecht
+        </td>
+        <td>
+            Geburtsdatum
+        </td>
+        <td>
+            E-Mail
+        </td>
+        <td>
+            Versicherung
+        </td>       
 	</tr> 
 
 	<?php 
              while ($row = $erg->fetch_assoc()) {       
          ?> 
 
-	<tr> 
+	<tr style="font-size: 14px; border: 3px solid black;"> 
 		<td>
 			<?php echo $row['vorname']; ?>
 		</td> 
@@ -63,10 +72,21 @@
 			<?php echo $row['geburtsdatum']; ?>
         </td> 
         <td>
-			<?php echo $row['e-mail']; ?>
+			<?php echo $row['email']; ?>
         </td>
         <td>
 			<?php echo $row['versicherung']; ?>
+        </td>
+        <td>
+            <?php
+            $loesch = mysqli_query($db, "DELETE FROM links WHERE id = '3'");
+            ?>
+            <button class="pure-button pure-button-primary">
+                <i class="material-icons">delete_forever</i>
+            </button>
+            <button class="pure-button pure-button-primary">
+                <i class="material-icons">mode_edit</i>
+            </button>
 		</td>
 	</tr> 
 
