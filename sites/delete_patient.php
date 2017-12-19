@@ -1,3 +1,3 @@
 <?php
-            $loesch = mysqli_query($db, "DELETE FROM links WHERE id = '3'");
+            $loesch = mysqli_query($db, "DELETE FROM patient WHERE id = '3'");
 ?>
