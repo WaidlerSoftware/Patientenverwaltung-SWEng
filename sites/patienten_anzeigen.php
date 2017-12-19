@@ -38,7 +38,6 @@
 <table style="text-align: center; border-collapse: collapse; border: 3px solid black;">
 	<tr style="font-size: 16px; border: 3px solid black; padding: 10px;"> 
         <td>Vorname</td>
-<<<<<<< HEAD
         <td>
             Nachname
         </td>
@@ -54,13 +53,6 @@
         <td>
             Versicherung
         </td>       
-=======
-        <td>Nachname</td>
-        <td>Geschlecht</td>
-        <td>Geburtsdatum</td>
-        <td>E-Mail</td>
-        <td>Versicherung</td>       
->>>>>>> d196f66bb2b670133af140169f643e58600f5087
 	</tr> 
 
 	<?php 
@@ -87,12 +79,9 @@
 			<?php echo $row['versicherung']; ?>
         </td>
         <td>
-<<<<<<< HEAD
             <?php
             $loesch = mysqli_query($db, "DELETE FROM links WHERE id = '3'");
             ?>
-=======
->>>>>>> d196f66bb2b670133af140169f643e58600f5087
             <button class="pure-button pure-button-primary">
                 <i class="material-icons">delete_forever</i>
             </button>
