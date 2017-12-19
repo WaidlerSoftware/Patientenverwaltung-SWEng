@@ -3,5 +3,5 @@
 
 <?php     
     $loesch = mysqli_query($connect, "DELETE FROM patient WHERE vorname = 'Florian'");
-    header("Location:patient_anzeigen.php");
+    header("Location:patienten_anzeigen.php");
 ?>
