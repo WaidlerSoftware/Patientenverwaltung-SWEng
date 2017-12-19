@@ -79,9 +79,6 @@
 			<?php echo $row['versicherung']; ?>
         </td>
         <td>
-            <?php
-            $loesch = mysqli_query($db, "DELETE FROM links WHERE id = '3'");
-            ?>
             <a href="delete_patient.php">
             <button class="pure-button pure-button-primary">
                 <i class="material-icons">delete_forever</i>
