@@ -1,3 +1,7 @@
-<?php
-            $loesch = mysqli_query($db, "DELETE FROM patient WHERE id = '3'");
+<?php include 'database.php';
+?>
+
+<?php     
+    $loesch = mysqli_query($connect, "DELETE FROM patient WHERE vorname = 'Florian'");
+    header("Location:patienten_anzeigen.php");
 ?>
