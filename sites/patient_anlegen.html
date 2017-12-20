@@ -15,54 +15,59 @@
 
     <body>
         <div class="flex-background">
-            <table class="static-background">
-                <tr>
-                    <td class="main-title" style="vertical-align:top">WaidlerSoftware - Patientenverwaltung</td>
-                </tr>
-                <tr id="patient_anlegen" class="main-area">
-                    <td>
-                        <form class="pure-form pure-form-aligned" method="post" action="save_patient.php" >
-                            <fieldset>
-                                <div class="pure-control-group">
-                                    <label for="name">Vorname</label>
-                                    <input id="vorname" type="text" placeholder="Vorname">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="nachname">Nachname</label>
-                                    <input id="nachname" type="text" placeholder="Nachname">
-                                </div>
-                                <div class="pure-control-group">
-                                        <label for="geschlecht">Geschlecht</label>
-                                        <input id="geschlecht" type="text" placeholder="Geschlecht">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="name">Geburtsdatum</label>
-                                    <input id="geburtsdatum" type="date">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="email">Email Addresse</label>
-                                    <input id="email" type="email" placeholder="Email Addresse">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="versicherung">Krankenversicherung</label>
-                                    <input id="insurance" type="text" placeholder="Versicherung">
-                                </div>
-                                <div class="pure-controls">
-                                    <button type="submit" class="pure-button pure-button-primary">Speichern</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <a href=./main.html>
-                        <button class="home-button mdl-button mdl-js-button mdl-button--raised">
-                            <i class="material-icons">home</i> Hauptseite
-                        </button>
-                    </a>
-                </tr>
-            </table>
-        </div>
+        <table class="static-background">
+            <tr>
+                <td class="main-title" style="vertical-align:top">WaidlerSoftware - Patientenverwaltung</td>
+            </tr>
+            <tr id="patient_anlegen" class="main-area">
+                <td>
+                    <form method="post" action="./save_patient.php" class="pure-form pure-form-aligned">
+                        <fieldset>
+                            <div class="pure-control-group">
+                                <label for="name">Vorname</label>
+                                <input type="text" name="vorname">
+                            </div>
+
+                            <div class="pure-control-group">
+                                <label for="nachname">Nachname</label>
+                                <input name="nachname" type="text">
+                            </div>
+
+                            <div class="pure-control-group">
+                                    <label for="geschlecht">Geschlecht</label>
+                                    <input name="geschlecht" type="text" placeholder="Geschlecht">
+                            </div>
+
+                            <div class="pure-control-group">
+                                <label for="name">Geburtsdatum</label>
+                                <input name="geburtsdatum" type="date">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="email">Email Addresse</label>
+                                <input name="email" type="email">
+                            </div>
+
+                            <div class="pure-control-group">
+                                <label for="versicherung">Krankenversicherung</label>
+                                <input name="versicherung" type="text">
+                            </div>
+
+                            <div class="pure-controls">
+                                <button type="submit" class="pure-button pure-button-primary">Speichern</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <a href=../main.html>
+                    <button class="home-button mdl-button mdl-js-button mdl-button--raised">
+                        <i class="material-icons">home</i> Hauptseite
+                    </button>
+                </a>
+            </tr>
+        </table>
+    </div>
     </body>
 
 </html>
