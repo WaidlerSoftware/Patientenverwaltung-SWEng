@@ -6,7 +6,7 @@ body{
 .flex-background{
     background-color: green;
     position: relative;
-    min-height: 733px;
+    min-height: 733 px;
     width: 100%;
 }
 
